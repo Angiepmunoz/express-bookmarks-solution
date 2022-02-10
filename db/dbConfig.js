@@ -10,10 +10,11 @@ const cn = {
     database: process.env.PG_DATABASE,
     user: process.env.PG_USER,
     password: process.env.PG_PASSWORD,
-    databaseURL: process.env.DATABASE_URL
 };
 
 //  database is now our db i.e anime_dev
+
+
 const database = pgp(cn);
 
 module.exports = database;
